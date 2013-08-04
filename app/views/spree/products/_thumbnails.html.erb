@@ -1,4 +1,5 @@
 <!-- no need for thumnails unless there is more then one image -->
+<% if false %>
 <% if @product.images.size > 1 || @product.variant_images.size > 0 %>
   <ul id="product-thumbnails" class="thumbnails inline" data-hook>
     <% @product.images.each do |i| %>
@@ -18,4 +19,5 @@
     end
     %>
   </ul>
+<% end %>
 <% end %>
